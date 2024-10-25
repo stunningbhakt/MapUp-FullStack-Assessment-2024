@@ -1,5 +1,3 @@
-// controllers/authController.js content goes here.
-
 const jwt = require('jwt-simple');
 const bcrypt = require('bcrypt');
 const User = require('../models/User');
