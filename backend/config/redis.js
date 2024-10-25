@@ -1,17 +1,9 @@
 // config/redis.js content goes here.
-const mongoose = require('mongoose');
+const Redis = require('ioredis');
 
-const connectDB = async () => {
-    try {
-        await mongoose.connect(process.env.DB_URI, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
-        console.log('MongoDB connected');
-    } catch (error) {
-        console.error('DB connection error', error);
-        process.exit(1);
-    }
-};
+const redis = new Redis({
+    host: process.env.REDIS_HOST,
+    port: process.env.REDIS_PORT,
+});
 
-module.exports = { connectDB };
+module.exports = redis;
