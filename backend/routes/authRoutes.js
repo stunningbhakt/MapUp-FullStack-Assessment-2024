@@ -1,0 +1,1 @@
+// routes/authRoutes.js content goes here.

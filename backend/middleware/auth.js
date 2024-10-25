@@ -1,0 +1,1 @@
+// middleware/auth.js content goes here.

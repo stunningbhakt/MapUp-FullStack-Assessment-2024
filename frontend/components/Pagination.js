@@ -1,0 +1,1 @@
+// components/Pagination.js content goes here.
